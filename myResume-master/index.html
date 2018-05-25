@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit"> 
+	<title>www</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+	<style type="text/css">
+		.demo{
+			padding: 2em 0;
+			background: #fff;
+		}
+		.progress-title{
+			font-size: 18px;
+			font-weight: 700;
+			color: #1c2647;
+			margin: 0 0 10px;
+		}
+		.progress{
+			height: 30px;
+			background: #fff;
+			border-top: 5px solid #1c2647;
+			border-bottom: 5px solid #1c2647;
+			border-radius: 0;
+			margin-bottom: 25px;
+			overflow: visible;
+			position: relative;
+		}
+		.progress:before,
+		.progress:after{
+			content: "";
+			width: 5px;
+			background: #1c2647;
+			position: absolute;
+			top: 0;
+			left: -5px;
+			bottom: 0;
+		}
+		.progress:after{
+			left: auto;
+			right: -5px;
+		}
+		.progress .progress-bar{
+			border: none;
+			box-shadow: none;
+			-webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+			animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+		}
+		@-webkit-keyframes animate-positive{
+			0%{ width: 0; }
+		}
+		@keyframes animate-positive{
+			0%{ width: 0; }
+		}
+	</style>
+	<script src="lib/jQuery/jquery-1.11.1.min.js"></script>
+	<script src="lib/navFixed-1.0.1.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<section id="block-firstPage">
+		<p class="blockTitle">Hello World！</p>
+		<div id="fstPage-down"><a href="#block-intro" hideFocus="true"></a></div>
+	</section>
+
+	
+	<section id="block-nav">
+		<header class="container">
+			<a class="fl" href="#block-firstPage" id="logo" hideFocus="true">首页</a>
+			<nav class="fr">
+				<a href="#block-intro" id="nav-intro" hideFocus="true">个人简介</a>
+				<a href="#block-skill" id="nav-skill" hideFocus="true">专业技能</a>
+				<a href="#block-prjEXP" id="nav-prjEXP" hideFocus="true">我的作品</a>
+				<a href="#block-school" id="nav-school" hideFocus="true">校园经历</a>
+				<a href="#block-wantMore" id="nav-wantMore" hideFocus="true">联系邮箱</a>
+			</nav>
+		</header>
+	</section>
+
+	<section id="block-intro">
+		<div class="container">
+			<div id="intro-icon">
+				<a class="link" href="https://github.com/gloriousch" id="link-github" hideFocus="true">GitHub</a>
+				<a class="link" href="https://www.zhihu.com/people/egg-soul/activities" id="link-linkedin" hideFocus="true">zhihu</a>
+				<img id="myPhoto" src="img/myPhoto.png">
+				<a class="link" href="https://blog.csdn.net/weixin_39173093" id="link-blog" hideFocus="true">Blog</a>
+				<a class="link" href="#block-wantMore" id="link-email" hideFocus="true">E-mail</a>
+			</div>
+			
+			<div id="intro-text">
+				<ul class="fl">
+					<li><span>姓名</span> | 王煜程</li>
+					<li><span>手机</span> | 18846433516</li>
+					<li><span>邮箱</span> | 77961829@qq.com</li>
+					<li><span>所在地</span> | 黑龙江省 - 哈尔滨</li>
+					<li><span>GitHub</span> | <a href="https://github.com/gloriousch" hideFocus="true">点击进入</a> </li>
+					<li><span>zhihu</span> | <a href="https://www.zhihu.com/people/egg-soul/activities" hideFocus="true">点击进入</a></li>
+					<li><span>Blog</span> | <a href="https://blog.csdn.net/weixin_39173093" hideFocus="true">点击进入</a></li>
+				</ul>
+				<div class="fr">
+					<p>我是一个性格幽默、做事认真的人。<br>我喜欢研究所碰到的各种技术，不给自己设边界，有很强的好奇心。<br>喜欢一切新奇酷炫的东
+						西，喜欢追求新知识,有较强的自学
+						能力,动手能力。</p>
+					<p>熟悉 HTML、CSS、Javascript，能熟练开发符合 W3C 标准的页面，熟练使用 jQuery 框架<br>
+						有良好的编码习惯。<br>
+						<br>熟悉vue框架。希望在以后可以不断的提升自我技术水平。
+					</p>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<section id="block-skill">
+		<div class="container">
+			<div class="skill-title">
+				<h2>专 业 技 能</h2>
+			</div>
+			<div class="demo">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-md-offset-3 col-md-6">
+							<h3 class="progress-title">HTML - 75%</h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger progress-bar-striped active" style="width:75%;"></div>
+							</div>
+
+							<h3 class="progress-title">CSS - 75%</h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger progress-bar-striped active" style="width:75%;"></div>
+							</div>
+
+							<h3 class="progress-title">J-Query - 60%</h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-info progress-bar-striped active" style="width:60%;"></div>
+							</div>
+
+							<h3 class="progress-title">JavaScript - 65%</h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-info progress-bar-striped active" style="width:65%;"></div>
+							</div>
+							<h3 class="progress-title">Vue - 70%</h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-info progress-bar-striped active" style="width:70%;"></div>
+							</div>
+
+							<h3 class="progress-title">PHP - 20%</h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success progress-bar-striped active" style="width:20%;"></div>
+							</div>
+
+							<h3 class="progress-title">Node.js - 20%</h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success progress-bar-striped active" style="width:20%;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section id="block-prjEXP">
+		<div class="container">
+			<div class="prjEXP-title">
+				<h2>我 的 作 品</h2>
+			</div>
+			<div class="skills-1">
+				<ul>
+					<a href="#">
+					<li class="xm">
+						<img src="img/dtjl.png" alt="">
+						<div class="tit">
+						<p>动画效果个人简历</p>
+						</div>
+					</li>
+					</a>
+					<a href="#">
+					<li class="xm">
+						<img src="img/qnw.png" alt="">
+						<div class="tit">
+						<p>vue去哪儿网App</p></div>
+					</li></a>
+					<a href="https://www.bilibili.com/video/av12332654">
+					<li class="xm">
+						<img src="img/mty.png" alt="">
+						<div class="tit">
+						<p>旅游电商App</p></div>
+					</li></a>
+					<li class="xm">
+						<img src="img/zpq.png" alt="">
+						<div class="tit">
+						<p>Css旋转合并照片墙</p></div>
+					</li>
+				</ul>
+			</div>
+			<div class="skills-2">
+				<ul>
+					<li class="xm">
+						<img src="img/cdr.png" alt="">
+						<div class="tit">
+						<p>吃豆人小游戏</p></div>
+					</li>
+					<li class="xm">
+						<img src="img/xm.png" alt="">
+						<div class="tit">
+						<p>小米官网</p></div>
+					</li>
+					<li class="xm">
+						
+						<img src="img/cd.png" alt="">
+						<div class="tit">
+						<p>垂直/水平导航栏，点击下拉子菜单</p>
+						</div>
+					</li>
+					<li class="xm">
+						<img src="img/www.jpg" alt="">
+						<div class="tit">
+						<p>to be continued</p></div>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="block-school">
+		<div class="container">
+			<div class="school-title">
+				<h2>校 园 经 历</h2>
+			</div>
+				<div class="timeline"></div>
+				<ul class="schoolbox">
+					<li class="school-intro0">
+						<label class="school-place">黑龙江大学</label>
+						<label class="school-position">班级任职宣传委员</label>
+					</li>
+					<li class="school-intro1">
+						<label class="school-place">学生社团联合会</label>
+						<label class="school-position">秘书处副主任</label>
+					</li>
+					<li class="school-intro1">
+						<label class="school-place">校级组织朝阳志愿者协会</label>
+						<label class="school-position">宣传部</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section id="block-wantMore">
+		<p>快把我收到碗里吧<br>
+		<p class="email">77961829@qq.com</p>
+		</p>
+	</section>
+	<script>
+        $(".skills-1 li").hover(function(){//鼠标悬停在上面实现什么效果
+		console.log(this);
+            $(this).find("div").stop().animate({
+                "bottom":"0px"
+            },1000);
+        },function(){//鼠标离开实现什么功能
+            $(this).find("div").stop().animate({
+                "bottom":"-100px"
+            },1000);
+		});
+		$(".skills-2 li").hover(function(){//鼠标悬停在上面实现什么效果
+		console.log(this);
+            $(this).find("div").stop().animate({
+                "bottom":"0px"
+            },1000);
+        },function(){//鼠标离开实现什么功能
+            $(this).find("div").stop().animate({
+                "bottom":"-100px"
+            },1000);
+		});
+		
+		// $(".html").on('mouseover', function(e) {
+		// 	log('移入')
+		// 	$(this).css({
+		// 		bottom: `0px`,
+		// 		transition: `1s`,
+		// 	})
+		// })
+
+
+	</script>
+</body>
+</html>
